@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en-us">
+
+<head>
+  <meta charset="UTF-8">
+  <title>Wind Visualization</title>
+  <!-- we'll use the below relative style sheet  -->
+ 
+
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+  <link rel="stylesheet" href="relative.css"> 
+
+</head>
+
+<body>
+        <nav class="navbar navbar-expand-lg navbar-light bg-light">   <!-- the -lg or  large shd be switched for smaller screens to -sm or -md  -->
+            <!-- <div class="container-fluid"> -- fluid makes it take up whole width, get the Latitude to the top -->
+                <a class="navbar-brand" href="main.html">Latitude</a> <!-- 1st link, Navbar goes to home  -->
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                  <span class="navbar-toggler-icon"></span>
+                </button>
+              
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                  <ul class="navbar-nav mr-auto">
+                    <li class="nav-item active">
+                      <a class="nav-link" href="data.html">Data <span class="sr-only">(current)</span></a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link" href="comparison.html">Comparison</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                      <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        Plots
+                      </a>
+                      <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                            <a class="dropdown-item" href="temp_visual.html">Temperature</a>
+                            <a class="dropdown-item" href="humidity_visual.html">Humidity</a>
+                            <a class="dropdown-item" href="cloud_visual.html">Clouds</a>
+                            <a class="dropdown-item" href="wind_visual.html">Wind</a>
+                      </div>
+                  
+                        
+                    </li>
+                    </ul>
+                </div>    
+        </nav>
+<div class="container"> 
+        <div class="row">
+                <div class="col-sm-8"><section>
+                        <h2>Wind Speed vs Latitude</h2>
+                        <article>
+                                <a href="assets/images/temperaturemap.png">
+                                <img style="float:right" target="_blank" src="assets/images/windmap.png"  alt="Wind Map" height="450" >
+                                                          </a>
+                            <p>This scatterplot depicts the wind speed vs latitude at our observation stations in cities around the globe on 1/5/2017. Higher winds come about two ways- either a consistent sea breeze like the West winds you see in Northern California or the Easterlies in the Carribean or the really high winds from a storm front of some type. So we thought these observations would show higher winds at the extremes of latitude as as there tends to be more unsettled weather at the poles.   
+                                </p>
+                             
+                            <p>We did see this to some extent as the windspeed seems to pick up at the extremes of latitude. However, it's not as pronounced as we expected, and also more pronounced in the Northen latitudes than Southern making the plot a little lopsided. We believe this is because the observations are from January, which means it's winter in the Norther hemisphere and winter tends to bring more unsettled weather.        
+                                </p>
+                            </article>
+                            </section>
+                </div>
+                <div class="col-sm-4"><section> 
+                    <h3>Visualizations</h3>
+                    <article>
+                            <a href="cloud_visual.html">
+                            <img style="float:left" target="_blank" src="assets/images/cloudymap.png"  alt="Cloud Obs Map" height="140" >
+                            </a>
+                            
+                            <a href="humidity_visual.html">
+                                <img style="float:left" target="_blank" src="assets/images/humiditymap.png"  alt="Humidity Map" height="140" >
+                            </a>
+                                
+                            <a href="temp_visual.html">
+                                <img style="float:left" target="_blank" src="assets/images/temperaturemap.png"  alt="Temperature Map" height="140" >
+                            </a>
+                                
+                            <a href="wind_visual.html">
+                                <img style="float:left" target="_blank" src="assets/images/windmap.png"  alt="Wind Map" height="140" >
+                            </a>
+                    </article>
+                </div>
+            
+      </div>
+
+      
+  
+</body>

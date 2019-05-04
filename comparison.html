@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en-us">
+
+<head>
+  <meta charset="UTF-8">
+  <title>Web Assignment</title>
+  <!-- we'll use the below relative style sheet  -->
+ 
+
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+  <link rel="stylesheet" href="relative.css"> 
+
+</head>
+
+<body>
+        <nav class="navbar navbar-expand-lg navbar-light bg-light">   <!-- the -lg or  large shd be switched for smaller screens to -sm or -md  -->
+            <!-- <div class="container-fluid"> -- fluid makes it take up whole width, get the Latitude to the top -->
+                <a class="navbar-brand" href="main.html">Latitude</a> <!-- 1st link, Navbar goes to home  -->
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                  <span class="navbar-toggler-icon"></span>
+                </button>
+              
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                  <ul class="navbar-nav mr-auto">
+                    <li class="nav-item active">
+                      <a class="nav-link" href="data.html">Data <span class="sr-only">(current)</span></a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link" href="comparison.html">Comparison</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                      <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        Plots
+                      </a>
+                      <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                            <a class="dropdown-item" href="temp_visual.html">Temperature</a>
+                            <a class="dropdown-item" href="humidity_visual.html">Humidity</a>
+                            <a class="dropdown-item" href="cloud_visual.html">Clouds</a>
+                            <a class="dropdown-item" href="wind_visual.html">Wind</a>
+                      </div>
+                  
+                        
+                    </li>
+                    </ul>
+                </div>    
+        </nav>
+        <!--
+<div class="container"> 
+        <div class="row">
+                <div class="col-sm-8"><section>
+                        <h2>Summary: Latitude vs. X</h2>
+                        <article>
+                                <a href="assets/images/temperaturemap.png">
+                                <img style="float:right" target="_blank" src="assets/images/temperaturemap.png"  alt="Temperature Map" height="450" >
+                                                          </a>
+                            <p>The purpose of this project was to analyze how weather changes as you get closer to the equator. To accomplish this analysis, we first pulled data from the OpenWeatherMap API to assemble a dataset on over 500 cities. 
+                                </p>
+                             
+                            <p>After assembling the datase, we used Matplotlib to plot various aspects of the weather vs. latitude. Factors we looked at included: temperature, cloudiness, wind speed, and humidity. This site provides the source data and visualizations created as part of the analysis, as well as explanations and descritptions of any trends and correlations witnessed. 
+                                </p>
+                            </article>
+                            </section>
+                </div> -->
+                <div class="col-sm-12"><section> 
+                    <h3>Visualizations</h3>
+                    <article>
+                            <p> Here we've placed the four visualization beside each other for comparison- click the image for more details and analysis.  
+                                </p>
+                            <a href="cloud_visual.html">
+                            <img style="float:left" target="_blank" src="assets/images/cloudymap.png"  alt="Cloud Obs Map" height="450" >
+                            </a>
+                            
+                            <a href="humidity_visual.html">
+                                <img style="float:left" target="_blank" src="assets/images/humiditymap.png"  alt="Humidity Map" height="450" >
+                            </a>
+                                
+                            <a href="temp_visual.html">
+                                <img style="float:left" target="_blank" src="assets/images/temperaturemap.png"  alt="Temperature Map" height="450" >
+                            </a>
+                                
+                            <a href="wind_visual.html">
+                                <img style="float:left" target="_blank" src="assets/images/windmap.png"  alt="Wind Map" height="450" >
+                            </a>
+                    </article>
+                </div>
+            
+      </div>
+
+      
+  
+</body>
+
+</html>
+

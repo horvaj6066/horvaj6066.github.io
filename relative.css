@@ -1,0 +1,34 @@
+/*
+ * Relative Position: sets boxes relative to its original location
+ * (i.e. below or left of where the element would normally be)
+ * increasing top: pos from 50 to 100 shifts down from top 
+ */
+
+body {
+    background: #eef1ef;
+    color: #084d4d
+    }
+
+
+h2 {
+        background-color: #eef1ef;
+        color:  #084d4d }
+  }
+h3 {
+    background-color: #eef1ef;
+    color:  #084d4d }
+}
+  
+  div {
+    background-color:  #eef1ef;
+  }
+  
+  p {
+    background: #eef1ef;
+    color:  #084d4d;
+    align: right;
+  }
+
+.container {
+    max-width: 100%;
+}
